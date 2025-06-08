@@ -1,30 +1,25 @@
 @import url('./reset.css');
 
-.main {
-  padding: 100px;
-}
 .background-img {
-  width: 500px;
-  height: 300px;
+  width: 800px;
   background-image: url('./../background-image.jpg');
-  margin: auto auto;
   color: white;
-  padding: 40px;
+  padding: 50px;
+  margin: 100px auto;
 }
 
 .quote-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-  margin: auto auto;
-  gap: 20px;
+  padding: 50px;
+  border: 2px solid black;
 }
 
 .quote-text {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .author-text {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
