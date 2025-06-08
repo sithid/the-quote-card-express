@@ -1,7 +1,8 @@
 @import url('./reset.css');
 
 .background-img {
-  width: 800px;
+  width: 90%;
+  min-width: 500px;
   background-image: url('./../background-image.jpg');
   color: white;
   padding: 50px;
@@ -13,13 +14,32 @@
   flex-direction: column;
   text-align: center;
   padding: 50px;
+  gap: 80px;
   border: 2px solid black;
 }
 
 .quote-text {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .author-text {
+  font-size: 1rem;
+}
+
+@media screen and (width >= 700px) {
+  .quote-container {
+    gap: 100px;
+  }
+  
+  .background-img {
+    width: 80%;
+  }
+
+  .quote-text {
+    font-size: 4rem;
+  }
+
+  .author-text {
   font-size: 1.5rem;
+  }
 }
