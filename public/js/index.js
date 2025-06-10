@@ -5,6 +5,19 @@ const elements = {
   author: document.getElementById("author"),
 };
 
+async function getRandomImage() {
+    const client_id = "YOUR_ACCESS_KEY";
+    const endpoint = `https://api.unsplash.com/photos/random/?client_id=${client_id}`;
+    try {
+        const response = await fetch(endpoint);
+        const returnedData = await response.json()
+        console.log(returnedData)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+/*
 const quotes = [
   {
     quote: "I think, therefore I am.",
@@ -56,3 +69,4 @@ function loopThroughQuotes() {
 }
 
 setTimeout(loopThroughQuotes, 3000);
+/*
